@@ -184,6 +184,8 @@ def story_classroom_mathquiz():
         print("You failed at maths.")
     else:
         print("Unknown Reply.\n")
+
+        
         
 # story_classroom_mathwin - You answered the math question correctly.
 def story_classroom_mathwin():
@@ -225,10 +227,20 @@ def rock_paper_scissors():
             print("The 'Rock' smashes scissors! You lose.")
         story_rps_ending()
 
-# story_rps_ending - RPS Ending.
+    else:
+        print("Unkown command.\n")
+    rock_paper_scissors()
+
+# story_rps_ending - Rock Paper Scissor Ending if Player win
 def story_rps_ending():
-    print("You and Steve decided to go to the school canteen and enjoy your day together.")
-    quit()
+    response = ""
+    while response not in yes_no:
+        response = input(
+            "Do you want to continue the game?\nyes/no\n")
+    if response == "yes":
+        story_classroom_math_1()
+    elif response == "no":
+        quit()
 
 # story_corridor3_1f - End of Corridor 1F. Player will either go upstairs or downstairs.
 def story_corridor3_1f():
