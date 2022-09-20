@@ -184,9 +184,7 @@ def story_classroom_mathquiz():
         print("You failed at maths.")
     else:
         print("Unknown Reply.\n")
-
-        
-        
+                
 # story_classroom_mathwin - You answered the math question correctly.
 def story_classroom_mathwin():
     response = ""
