@@ -184,7 +184,7 @@ def story_classroom_mathquiz():
         print("You failed at maths.")
     else:
         print("Unknown Reply.\n")
-                
+        
 # story_classroom_mathwin - You answered the math question correctly.
 def story_classroom_mathwin():
     response = ""
@@ -225,20 +225,10 @@ def rock_paper_scissors():
             print("The 'Rock' smashes scissors! You lose.")
         story_rps_ending()
 
-    else:
-        print("Unkown command.\n")
-    rock_paper_scissors()
-
-# story_rps_ending - Rock Paper Scissor Ending if Player win
+# story_rps_ending - RPS Ending.
 def story_rps_ending():
-    response = ""
-    while response not in yes_no:
-        response = input(
-            "Do you want to continue the game?\nyes/no\n")
-    if response == "yes":
-        story_classroom_math_1()
-    elif response == "no":
-        quit()
+    print("You and Steve decided to go to the school canteen and enjoy your day together.")
+    quit()
 
 # story_corridor3_1f - End of Corridor 1F. Player will either go upstairs or downstairs.
 def story_corridor3_1f():
@@ -252,25 +242,6 @@ def story_corridor3_1f():
         story_basement1()
     else:
         print("Unknown Reply.\n")
-        
-#story_basement1 - If player choose downstair they will be directed to story basement 
-def story_basement1():
-    response = ""
-    while response not in directions:
-        response = input("*cough cough* you went down to an old basement, seems like it's havent been touched for years. Which direction do you want to go?\nright/left/forward/upstairs\n")
-    if response == "right":
-        print("You see a suspicious door infront of you and you open it, you see a teacher cleaning up a storage room.")
-        storage_room()
-#storage_room - if player choose right, they will be directed to a conversation(random output) with the teacher
-def storage_room():
-    convo1 = ("Hello, there why are you here to help me?")
-    convo2 = ("Why are you here??")
-    convo3 = ("???")
-
-    convolist = (convo1, convo2, convo3)
-
-    print(random.choice(convolist))
-    
 
 start()
 
