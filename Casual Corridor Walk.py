@@ -263,7 +263,14 @@ def story_basement1():
         storage_room()
 #storage_room - if player choose right, they will be directed to a conversation(random output) with the teacher
 def storage_room():
-    print("change this to a conversation")
+    convo1 = ("Hello, there why are you here to help me?")
+    convo2 = ("Why are you here??")
+    convo3 = ("???")
+
+    convolist = (convo1, convo2, convo3)
+
+    print(random.choice(convolist))
+    
 
 start()
 
